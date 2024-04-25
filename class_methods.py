@@ -1,5 +1,6 @@
-import numpy as np
 
+
+# Example of using __new__ and __init__ at the same time
 
 class Person:
     def __new__(cls, name, age):
