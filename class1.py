@@ -26,4 +26,13 @@ class Square:
 
 
 square1 = Square(2)
-print(square1.area())
+square1_area = square1.area()
+print(square1_area)
+square1_perimeter = square1.perimeter()
+print(square1_perimeter)
+
+rect1 = Rectangle(3, 6)
+rect1_area = rect1.area()
+print(rect1_area)
+rect1_perimeter = rect1.perimeter()
+print(rect1_perimeter)
