@@ -5,7 +5,7 @@ def linear_search(list, target):
     for i in range(0, len(list)):
         if list[i] == target:
             return i
-        return None
+    return None
 
 # function to verify
 
@@ -24,5 +24,5 @@ num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 result = linear_search(num_list, 12)
 verify(result)
 
-result = linear_search(num_list, 2)
+result = linear_search(num_list, 5)
 verify(result)
