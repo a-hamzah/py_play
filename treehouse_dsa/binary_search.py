@@ -29,6 +29,4 @@ verify(result)
 result = binary_search(num_list, 7)
 verify(result)
 
-"""
-Important to note that the list must be sorted before applying binary search
-"""
+# Important to note that the list must be sorted before applying binary search
