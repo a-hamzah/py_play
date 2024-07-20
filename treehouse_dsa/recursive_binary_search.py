@@ -1,8 +1,10 @@
 def recursive_binary_search(list, target):
     """
     This function will return TRUE if the target exists and False if it doesn't
+    A recursive function is that calls itself.
+    We start with the recursive function with a stopping condition.
     """
-    if len(list) == 0:
+    if len(list) == 0: # the function keeps calling itself until the list is empty, so this condition matters
         return False
     else:
         midpoint = (len(list)) // 2
@@ -27,3 +29,5 @@ verify(result)
 
 result = recursive_binary_search(num_list, 3)
 verify(result)
+
+# python has recursion depth limitation
