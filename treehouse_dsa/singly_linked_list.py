@@ -30,11 +30,20 @@ class SinglyLinkedList:
         Returns the number of nodes in the list. Takes O(n) time (Linear time)
         """
         current = self.head
-        count = 0 # local variable
+        count = 0  # local variable
 
         while current != None:
             count += 1
             current = current.nextNodeAddress
         return count
 
+    def add(self, data):
+        """
+        Adds new node containing data at head of the list
+        Takes O(1) time
+        """
+        new_node = Node(data)
+        new_node.nextNodeAddress = self.head
+        self.head = new_node
 
+    # Add a new function
