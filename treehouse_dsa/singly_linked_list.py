@@ -46,4 +46,39 @@ class SinglyLinkedList:
         new_node.nextNodeAddress = self.head
         self.head = new_node
 
-    # Add a new function
+    def search(self, key):
+        """
+        Searches for the first node containing data according to the key
+        It returns the node if found and 'None' is node is not found
+        Takes O(n) time
+
+        """
+        current = self.head
+
+        while current:
+            if current.data == key:
+                return current
+            else:
+                current = current.nextNodeAddress
+        return None
+
+    def __repr__(self):
+        """
+        Returns a string represenation of a list
+        Takes O(n) time
+        """
+        nodes = []  # start by creating an empty list
+        current = self.head
+
+        while current:
+            if current is self.head:
+                nodes.append("[Head: %s]" % current.data)
+            elif current.nextNodeAddress is None:
+                nodes.append("[Tail: %s]" % current.data)
+            else:
+                nodes.append("[%s]" % current.data)
+            current = current.nextNodeAddress
+        return '->'.join(nodes)
+
+
+# TODO: Insert and Delete in Linked list (2:48 Hrs Contd.)
